@@ -14,5 +14,5 @@ file {'motd':
       ensure  => file,
       path    => '/etc/puppetlabs/motd',
       mode    => 0644,
-      content => "Welcome to ${hostname},\n ${fqdn}:  ${operatingsystem} island in the sea of ${domain}.\n",
+      content => "${hostname}, ${fqdn}:  ${operatingsystem} in the sea of ${domain}.\n",
 }
